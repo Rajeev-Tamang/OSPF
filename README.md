@@ -69,3 +69,20 @@
     - Hub and Spoke Desing.
  
       
+## OSPF Types Of Routers
+- Internal Routers
+  - All interfaces in Single Area.
+
+- Backbone Routers.
+    - At least one interface in Area 0
+  
+- ABR-Area Border Routers.
+    - Interfcaes in Area 0 and another Area.
+    - Maintain a LSDB for each Area.
+    - Summarize LSA's between Area.
+
+- ASBR:Autonomus System Border Routers.
+    -Redistributing foregin routes into OSPF.
+
+
+     
