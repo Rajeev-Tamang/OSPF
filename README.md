@@ -124,9 +124,9 @@
 
 ```mermaid
 graph TD;
-    DOWN -->|Hello Packet| INIT;
-    INIT -->|2-Way Received| "2-WAY";
-    ["2-WAY"] -->|DR/BDR Election| EXSTART;
+    DOWN --> INIT;
+    INIT --> ["2-WAY"];
+    ["2-WAY"] -->EXSTART;
     EXSTART -->|Exchange DB Descriptors| EXCHANGE;
     EXCHANGE -->|LSA Request & Response| LOADING;
     LOADING -->|LSA Synchronization| FULL;
