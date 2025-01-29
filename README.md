@@ -119,9 +119,21 @@
 - NSSA: Not So Stubby Area
     - no redistrbution , except from local area.
     - optionall replaced with default routes.
- 
+
+## OSPF ADJACENCY
+
+```mermaid
+graph TD;
+  DOWN --> INIT;
+  INIT --> "2-WAY";
+  EX-START --> EXCHANGE;
+  EXCHANGE --> LOADING;
+  LOADING --> FULL;
+  "2-WAY" --> ATTEMPT;
+  ATTEMPT --> INIT;
+  ATTEMPT --> DOWN;
 
 
-  
+
 
      
