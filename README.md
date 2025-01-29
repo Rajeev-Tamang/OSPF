@@ -95,10 +95,24 @@
   - Hello packets sent unicat (tyically every 30 seconds)
 - Content of hello determines if router will become neighbor
 
-| Hellow Packtes    | Descriptio |
+| Hello Packtes    | Descriptio |
 |-------------------|------------|
 | **Router ID**     | Identity of each routers (32bit)|
-| **Hellow Interval**| Frequency of periodic hello's |
-| **Dead INterval** | Duration to remember Neighbor (Typically 4*Hello interval) |
+| **Hello Interval**| Frequency of periodic hello's |
+| **Dead INterval** | Duration to remember Neighbor (Typically 4*Hello interval) |rea
+| **Neighbor**      | Neighbor router's ID's seen on link. *validates two way reachability* |
+| **Area ID**       | OSPF area interface belongs to  |
+| **Authentication data** | Password restricated peering** |
+| **Network mask**   |  Subnet mask for link |
+| **Area Type**    | Normal,stub,NSSA  |
+| **DR**            | IP address of DR |
+| **BDR**          | IP address of BDR |
+| **Priority**    | Influences DR/BDR election |
+
+
+
+
+
+
 
      
