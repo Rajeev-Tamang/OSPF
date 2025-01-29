@@ -111,8 +111,17 @@
 
 
 
+## AREA TYPE
+- Normal Area : Default Area Type
+- STUB AREA :
+    - No redistributed routes
+    - Replaced with default routes.
+- NSSA: Not So Stubby Area
+    - no redistrbution , except from local area.
+    - optionall replaced with default routes.
+ 
 
 
-
+  
 
      
