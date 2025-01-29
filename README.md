@@ -1,4 +1,4 @@
-# OSPF
+# Open Shortest Path First (OSPF)
 **OSPF TABLES**
 - Neighbor Table
 - Topology Table
