@@ -123,7 +123,7 @@
 ## OSPF ADJACENCY
 
 ```mermaid
-graph TD;
+graph LR;
     DOWN --> INIT;
     INIT --> TwoWAY;
     TwoWay -->EXSTART;
