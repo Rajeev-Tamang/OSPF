@@ -36,4 +36,4 @@
 - OSPF will contribute its best routes to routing tables.
 
 ## OSPF PACKETS
-**Hello** &nbsp;  
+**Hello** **.**
