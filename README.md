@@ -223,3 +223,30 @@ graph TD;
     - ***Ties broken by router id***
     - ***0 never become DR/BDR, interface is always DROTHER***
 - ***Command: ip ospf priority [0-255]***
+
+- How are routing updates propagated?
+    - 224.0.0.5- All OSPF routers.
+    - 224.0.0.6- Only DR/BDR
+ 
+- When DR has routing updates:
+    - DR sends LSU to 224.0.0.5 ( to all routers)
+    - BDR send LsACK 224.0.0.5 ( to all routers)
+    - DROTHER's send LsACK to 224.0.0.6 ( only to DR/BDR)
+      
+- When BDR has routing updates:
+    - BDR sends LSU to 224.0.0.5
+    - DR sends LsACK to 224.0.0.5
+    - DROTHER's sends LsACk to 224.0.0.6
+ 
+- When DROTHER's has routing updates:
+    - DROTHERS sends LSU to 224.0.0.6
+    - DR sends LSU to 224.0.0.5
+    - BDR send LsACK to 224.0.0.5
+    - Remaining DROTHERs send LsACk to 224.0.0.6.
+
+
+ ## OSPF COST CALCULATION:
+
+**COST= Refernce Bandwith / Interface Bandwidth  (Default: 100MPBS)**
+
+   
