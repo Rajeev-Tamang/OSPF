@@ -134,6 +134,9 @@ graph LR;
     ATTEMPT --> INIT;
 
 
+- DOWN
+  - Initial state when ospf first configured
+
 
 
 
