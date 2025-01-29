@@ -84,5 +84,17 @@
 - ASBR:Autonomus System Border Routers.
     -Redistributing foregin routes into OSPF.
 
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+
+## HELLO PACKETS:
+- Discover OSPF neighbors.
+- Sent periodically to 224.0.0.5
+  - Typically every 10 Seconds.
+- Some Network don't support multicast
+  - Router's peer ip must be maunually configured.
+  - Hello packets sent unicat (tyically every 30 seconds)
+- Content of hello determines if router will become neighbor
+
+- 
 
      
