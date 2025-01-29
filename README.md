@@ -127,9 +127,9 @@ graph TD;
     DOWN --> INIT;
     INIT --> TwoWAY;
     TwoWay -->EXSTART;
-    EXSTART -->|Exchange DB Descriptors| EXCHANGE;
-    EXCHANGE -->|LSA Request & Response| LOADING;
-    LOADING -->|LSA Synchronization| FULL;
+    EXSTART --> EXCHANGE;
+    EXCHANGE --> LOADING;
+    LOADING --> FULL;
     DOWN --> ATTEMPT;
     ATTEMPT --> INIT;
 
