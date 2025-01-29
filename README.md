@@ -132,11 +132,40 @@ graph LR;
     LOADING --> FULL;
     DOWN --> ATTEMPT;
     ATTEMPT --> INIT;
-
+```
 
 - DOWN
   - Initial state when ospf first configured
+      - Technically , a non-state
+  -Sending perodic Hellos to 224.0.0.5
+      - Initally *Neighbor* field is *Empty*.
 
+- INIT:
+    - Received a hello packets.
+    - Outbound hellos now include peer router ID.
+ 
+- 2-Way:
+    - Router see itself in Neighbor hello.
+    - Router decide if adjacency will proceed.
+ 
+- ExSTART:
+    - Master/slave election.
+    - Governs reliable DBD exchange.
+    - Higher Router-id become master.
+ 
+- ExChange:
+    - Master/slave election is complete.
+    - Slaves sends confirming DBD.
+    - Peers exchange LSDB Summaries.
+ 
+- Loading:
+    - peer Know LSA's in Neighbor LSDB.
+    - peer begin requesting full LSA's
+    - LSR,LSU,LsACK.
+ 
+  -FULL:
+    - LSDB'S are syncronized.
+    - Adjacency Complete.
 
 
 
