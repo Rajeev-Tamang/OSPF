@@ -125,8 +125,8 @@
 ```mermaid
 graph TD;
     DOWN --> INIT;
-    INIT --> ["2-WAY"];
-    ["2-WAY"] -->EXSTART;
+    INIT --> TwoWAY;
+    TwoWay -->EXSTART;
     EXSTART -->|Exchange DB Descriptors| EXCHANGE;
     EXCHANGE -->|LSA Request & Response| LOADING;
     LOADING -->|LSA Synchronization| FULL;
