@@ -4,9 +4,8 @@
 > Neighbor Table
 >
 > Topology Table
->
->> Link State Database (LSDB)
->> Link State Advertisemet (LSA)
+- Link State Database (LSDB)
+- Link State Advertisemet (LSA)
 >
 > Routing Table
 
@@ -21,7 +20,7 @@
 >
 > LsACK
 
-** Neighbor Table**
+**Neighbor Table**
 - Directly connected OSPF routers
 - state of Adjacency( Full,two way,DR)
 - *show ip ospf neighbor*
