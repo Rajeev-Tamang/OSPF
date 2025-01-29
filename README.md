@@ -126,7 +126,7 @@
 graph LR;
     DOWN --> INIT;
     INIT --> TwoWAY;
-    TwoWay -->EXSTART;
+    TwoWAY -->EXSTART;
     EXSTART --> EXCHANGE;
     EXCHANGE --> LOADING;
     LOADING --> FULL;
