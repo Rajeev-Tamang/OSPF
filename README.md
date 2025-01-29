@@ -57,3 +57,15 @@
   - Sent to confirm reception of LSU.
 
 
+## OSPF AREAS
+- OSPF routers maintain identical LSDBs ( Changes anywhere propagated everywhere)
+- Networks can be Segregated using Areas.
+    - limits propagation to confined sections.
+- Area Design Create a 0-tier hierarchy
+    - Area 0: Top of Hierarchy , **BACKBONE AREA**
+    - Area# : All other Areas: **1 to 4,294,967,295**
+- Traffic between areas must traverse **Area 0**
+    - Assures loop free area topologies
+    - Hub and Spoke Desing.
+ 
+      
