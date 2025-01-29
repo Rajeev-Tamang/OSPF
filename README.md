@@ -95,6 +95,10 @@
   - Hello packets sent unicat (tyically every 30 seconds)
 - Content of hello determines if router will become neighbor
 
-- 
+| Hellow Packtes    | Descriptio |
+|-------------------|------------|
+| **Router ID**     | Identity of each routers (32bit)|
+| **Hellow Interval**| Frequency of periodic hello's |
+| **Dead INterval** | Duration to remember Neighbor (Typically 4*Hello interval) |
 
      
