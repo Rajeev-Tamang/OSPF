@@ -24,3 +24,9 @@
 - Directly connected OSPF routers
 - state of Adjacency( Full,two way,DR)
 - *show ip ospf neighbor*
+
+**Topoly Table**
+- Everything OSPF Know About
+- Link State Database(LSDB)
+- - Each entry in LSDB is known as: link state advertisement(LSA)
+  - *show ip ospf database*
