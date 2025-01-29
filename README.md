@@ -165,5 +165,22 @@ graph LR;
     - Adjacency Complete.
 
 
-
+## DR and BDR ELECTION:
+- Elected using interface priority number.
+    - Range [0-255]
+    - Default 1
+    - Highest router-id breaks ties.
+ 
+```mermaid
+graph TD;
+  R1 --> | ip:10.10.10.1, priority 1 | SW;
+  R2 --> | ip:10.10.10.2, priority 1 | SW;
+  R3 --> | ip:10.10.10.3, priority 1 | SW;
+  R4 --> | ip:10.10.10.4, priority 1 | SW;
+```
+- R1 initial hello packets.
+    - Router id: 1.1.1.1
+    - priority: 1
+    - DR ip: 0.0.0.0
+    - BDR ip : 0.0.0.0
      
