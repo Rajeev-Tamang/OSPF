@@ -1,24 +1,21 @@
 # OSPF
 **OSPF TABLES**
->
-> Neighbor Table
->
-> Topology Table
-- Link State Database (LSDB)
-- Link State Advertisemet (LSA)
->
-> Routing Table
+- Neighbor Table
+- Topology Table
+  - Link State Database (LSDB)
+  - Link State Advertisemet (LSA)
+- Routing Table
 
 **OSPF PACKETS**
-> Hello
+> *Hello*
 >
-> Database Descriptor(DBD)
+> *Database Descriptor(DBD)*
 >
-> Link State Request(LSR)
+> *Link State Request(LSR)*
 >
-> Link State UPdate(LSU)
+> *Link State UPdate(LSU)*
 >
-> LsACK
+> *LsACK*
 
 **Neighbor Table**
 - Directly connected OSPF routers
