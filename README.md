@@ -30,3 +30,11 @@
 - Link State Database(LSDB)
   - Each entry in LSDB is known as: link state advertisement(LSA)
   - *show ip ospf database*
+
+**Routing Tables**
+- Routers Routing Table (not Solely a function of OSPF)
+- OSPF will contribute its best routes to routing tables.
+
+## OSPF PACKETS
+**Hello**
+&nbsp;  
