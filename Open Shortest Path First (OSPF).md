@@ -274,6 +274,6 @@ graph TD;
 ```
 
 |  Network Type  | P2P  | BROADCAST  | NBMA |  P2MP  | P2MP-NB  |
-|---------------------------------------------------------------|
+|----------------|------|-----------|-----|-------|-------------|
 | **Max router per link** | 2  | &infin; | &infin; | &infin; | &infin; |
 | **Full mesh connectivity** | ✅ | ✅ | ✅ | ❌ | ❌ |
