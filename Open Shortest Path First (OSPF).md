@@ -258,7 +258,7 @@ graph LR;
 ```
   **Broadcast and NBMA**
 ```mermaid
-graph LR;
+graph TD;
     R1 --> SW;
     R2 --> SW;
     R3 --> SW;
@@ -268,11 +268,13 @@ graph LR;
   **POINT TO MULTIPOINT AND P2MP-NB**
 ```mermaid
 graph TD;
-    R1["R1 (Hub)"] --> R2["R2"]
-    R1 --> R3["R3"]
+    R1["R1 (Hub)"] --> Cloud["☁ Cloud ☁"]
+    Cloud --> R2["R2"]
+    Cloud --> R3["R3"]
     R1 --> R4["R4"]
     
     style R1 fill:#f4b183,stroke:#333,stroke-width:2px
+    style Cloud fill:#d9e1f2,stroke:#333,stroke-width:2px,rx:10,ry:10
     style R2 fill:#d9e1f2,stroke:#333,stroke-width:1px
     style R3 fill:#d9e1f2,stroke:#333,stroke-width:1px
     style R4 fill:#d9e1f2,stroke:#333,stroke-width:1px
