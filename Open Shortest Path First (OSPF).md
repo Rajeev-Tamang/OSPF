@@ -251,12 +251,12 @@ graph TD;
 
 
 ## OSPF NETWORK TYPE
-  **Point to Point**
+  **POINT TO POINT**
 ```mermaid
 graph LR;
     R1 --> |PointToPOint|R2;
 ```
-  **Broadcast and NBMA**
+  **BROADCAST and NBMA**
 ```mermaid
 graph TD;
     R1["R1"] --> SW;
@@ -272,3 +272,8 @@ graph TD;
     Cloud --> R2["R2"]
     Cloud --> R3["R3"]    
 ```
+
+|  Network Type  | P2P  | BROADCAST  | NBMA |  P2MP  | P2MP-NB  |
+|---------------------------------------------------------------|
+| **Max router per link** | 2  | &infin; | &infin; | &infin; | &infin; |
+| **Full mesh connectivity** | ✅ | ✅ | ✅ | ❌ | ❌ |
