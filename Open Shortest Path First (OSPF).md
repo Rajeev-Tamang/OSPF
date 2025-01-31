@@ -254,5 +254,5 @@ graph TD;
 
 ```mermaid
 graph LR;
-    R1 --> R2;
+    R1 --> |PointToPOint|R2;
 ```
