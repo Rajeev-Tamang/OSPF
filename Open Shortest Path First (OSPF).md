@@ -249,4 +249,10 @@ graph TD;
 
 **COST= Refernce Bandwith / Interface Bandwidth  (Default: 100MPBS)**
 
-   
+
+## OSPF NETWORK TYPE
+
+```mermaid
+graph LR;
+R1 --> |Point to Point|  R2;
+```
