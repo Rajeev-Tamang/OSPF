@@ -277,3 +277,15 @@ graph TD;
 |----------------|------|-----------|-----|-------|-------------|
 | **Max router per link** | 2  | &infin; | &infin; | &infin; | &infin; |
 | **Full mesh connectivity** | ✅ | ✅ | ✅ | ❌ | ❌ |
+| **DR/BDR** | ❌  | ✅  | ✅  |  ❌  | ❌  |
+| **Hello/Dead interval timer** |  10/40  | 10/40  | 30/120  | 30/120  | 30/120  |
+| **Auto Neighbor Discovery** | ✅  | ✅  |  ❌  | ✅  | ❌  |
+| **Periodic Hello sent to** |  224.0.0.5 | 224.0.0.5 | Neighbor ID | 224.0.0.5 | Neighbor ID |
+| **Neighbor Communication sent to** | 224.0.0.5 | unicast | unicast | unicast | unicast | 
+| **LSA sent to** | 224.0.0.5 | multicast DR/BDR | unicast DR/BDR | unicast | unicast |
+| **Next HOP IP** | Next peer | originator | originator | HUB | HUB |
+
+
+
+
+
