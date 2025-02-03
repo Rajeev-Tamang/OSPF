@@ -371,3 +371,13 @@ graph TD;
   - LSA TYPE 11- OSPF Domain SCOPE.
   - BY default Opaque LSA Are allowed in STUB and NSSA.
   - **COMMAND: stub no-ext-capabilty- disable opaque LSA
+
+
+**PASSIVE INTERFACE**
+- Disable sending Hello Packets.
+- Continues to allow IP subnets advertisement.
+- NO Neighbor relationship Possible on Passive interfaces.
+- ***COMMAND: passive-interface default*** Option to set all interfaces as passive interface.
+- selectively disable passive interface on specific interfaces.
+
+**AUTHENTICATION**
