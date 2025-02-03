@@ -262,6 +262,7 @@ graph TD;
 
 
   **Network LSA TYPE 2 LSA**
+    -
     - send by DR, when multiple routers connected to the same multi-access link
     - DR interface ip, DR router id, network mask and router-id of all attached routers.
     
