@@ -251,7 +251,7 @@ graph TD;
 
 
 
-![OSPF LSAs](/Rajeev-Tamang/OSPF/blob/main/OSPF%20LSAs.jpg)
+![OSPF LSAs](https://github.com/Rajeev-Tamang/OSPF/blob/main/OSPF%20LSAs.jpg)
 
 
 ## OSPF LSA TYPE:
