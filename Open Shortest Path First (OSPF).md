@@ -249,12 +249,9 @@ graph TD;
 
 **COST= Refernce Bandwith / Interface Bandwidth  (Default: 100MPBS)**
 
-
-
-![OSPF LSAs](https://github.com/Rajeev-Tamang/OSPF/blob/main/OSPF%20LSAs.jpg)
-
-
 ## OSPF LSA TYPE:
+![OSPF LSAs](https://github.com/Rajeev-Tamang/OSPF/blob/main/OSPF%20LSAs.jpg)
+  
   **Router LSA:**
     - Router identifies itself and its link and each link costs.
     - Ip networks/subnets masks / cost for each router link.
