@@ -250,6 +250,10 @@ graph TD;
 **COST= Refernce Bandwith / Interface Bandwidth  (Default: 100MPBS)**
 
 
+
+
+
+
 ## OSPF LSA TYPE:
   **Router LSA:**
     - Router identifies itself and its link and each link costs.
