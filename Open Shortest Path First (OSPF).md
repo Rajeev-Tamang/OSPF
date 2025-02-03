@@ -335,4 +335,37 @@ graph TD;
 
 **1.NORMAL AREA**
     - LSA |1|2|3|4|5|
+    - It is default area where all type of LSA are allowed.
 
+**2.STUB ARE**
+  - LSA |1|2|3|
+  - This is a area where only type 1 , 2 and 3 are allowed. ALSO default route via type 3 appers.
+  - ***NOTE-jun area ma ASBR hudaina tiyo area lai matra hamri stub area banhauna sakxam***
+  - ***to implement ABR and tiyo area vari we need to add command [area 44 stub] 44 is area number, change according to your topology***
+
+***3.TOTALLY STUB AREA**
+- LSA |1|2|
+- This is area where type 1 and 2 are only allowed , it is an additioal features of stub area, and changes need to be done in ABR only , not on all router within an area.
+- **ABR(config): area 44 no-summary**
+- ***NOTE:hamle area lai stub banhaune bitikai euta default route aauxa so hamlai type 3 LSA ni hamro routing table within that area khashai vannu parda xaidaina as sabbai ABR batai janhe ho , so tesko laghi hami totally stubby area  useful hunxa***
+
+
+**4.NSSA**
+- It only exists in ASBR area, it is similar like STUB area where only 1,2,3 are allowed but in NSSA area there is TYPE 7 LSA.
+- Redistribution route via Type 7 .
+- ABR convert the type 7 to TYPE 5 when advertising to other area.
+- **COMMAND: area 55 nssa default-information-originate**
+- ***NOTE:For better understaing figure ma vako explanaton paddhnu***
+
+**5.TOTALLY NSSA**
+  - LSAs |1|2|7|
+  - Redistribution via type 7
+  - default route via type 3.
+
+**Opaque LSA's**
+  - Carry non-ospf information via OSPF.
+  - LSA TYPE 9 -local link scope
+  - LSA TYPE 10- Local area scope
+  - LSA TYPE 11- OSPF Domain SCOPE.
+  - BY default Opaque LSA Are allowed in STUB and NSSA.
+  - **COMMAND: stub no-ext-capabilty- disable opaque LSA
