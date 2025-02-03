@@ -329,5 +329,10 @@ graph TD;
 
 ## OSPF AREA TYPES
 
+![OSPF AREA TYPE](https://github.com/Rajeev-Tamang/OSPF/blob/main/OSPF%20AREA%20TYPE.jpg)
 
+***Befor understanding the OSPF Area, you should better understand the LSA TYPES.***
+
+**1.NORMAL AREA**
+    - LSA |1|2|3|4|5|
 
