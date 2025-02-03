@@ -381,3 +381,46 @@ graph TD;
 - selectively disable passive interface on specific interfaces.
 
 **AUTHENTICATION**
+
+- Option 1: No authentication
+    - Default-Adjacency formed with anyone with matching Hello Packets.
+
+- Option 2: Simple Password Authentication
+    - Better than nothing ..but just barely.
+    - ***CUZ if euta node bata hello packet with password  aarko router lai forward garhim vanhe , password tha na vako router le wireshark jastoo tool use garhera packet herda password plain text ma dekxa and tehi password use garhera neighborship form garnu sakxa***
+    - **to configure first we need to assign password in interface and then we need to enable authentication and we have two choice interface base and area base.**
+    - Command:
+        - interface f0/0
+        - ip ospf authentication-key xxxxxxx
+    - Enable authentication
+        - int f 0/0   [ interface base]
+        - ip ospf authentication
+     
+        - router ospf 110 [ area base]
+        - area X authetication 
+
+- Option 3: HASH based Authentication
+    - The only correct choice (two ways to configure)
+    - when using hash based authentication , the ospf packet and the authentication password are hashed and hash digest is generated but remember the passowrd do not travel on wire , and when the packet reached the other end the received router will decrypt the packet.
+    - command
+        - interface f 0/0
+        - ip ospf message-digest-key <key> md5 <password>
+    - enable ospf authentication
+        - interface f 0/0
+        - ip ospf authentication message-digest
+     
+        - router ospf 110
+        - area <x> authentication message-digest
+     
+***But MD5 do not considerd secure since 2011 , and inorder to use other hashing algorithm we need to use the key chain**
+
+**Key chain faciliated key rotation i.e we can change the key without killing the neighbor**
+
+**Key chain also faciliattes date base key roatation, for better understanding about key chain i'll make one lab and will include it in git.
+
+**Command**
+  - ***keychain <name>***
+  - ***key <#>***
+  - ***cryptographic-algorithm <alg>***
+  - ***key-string <password>***
+  - ***then enable it in interface base or area base***
