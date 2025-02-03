@@ -327,6 +327,7 @@ graph TD;
 | **Next HOP IP** | Next peer | originator | originator | HUB | HUB |
 
 
+## OSPF AREA TYPES
 
 
 
