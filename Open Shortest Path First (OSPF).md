@@ -260,14 +260,12 @@ graph TD;
   - 
     ***NOTE: Type 1 i.e Router LSA vanhe ko within local Area hunxa , to verify we can see the LSDB with show ip ospf database*** 
 
-
-  **Network LSA TYPE 2 LSA**
-    -
-    - send by DR, when multiple routers connected to the same multi-access link
-    - DR interface ip, DR router id, network mask and router-id of all attached routers.
-    
-  ***NOTE: type 2 LSA hami teti belha dekxam jun belha euta area ma multi-acess link use hunxa jastai switch haru use vako thau ma jun thau ma DR/BR election hunxa***
-
+**Network LSA TYPE 2 LSA**
+  - send by DR, when multiple routers connected to the same multi-access link
+  - DR interface ip, DR router id, network mask and router-id of all attached router
+  - used to build  topology map of local area
+  - 
+  ***NOTE: type 2 LSA hami teti belha dekxam jun belha euta area ma multi-acess link use hunxa jastai switch haru use vako thau ma jun thau ma DR/BR election hunxa**
 
 **Summary LSA - TYPE 3 LSA**
   - Contain IP networks from foregin areas.
